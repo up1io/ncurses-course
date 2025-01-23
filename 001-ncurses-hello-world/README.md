@@ -1,6 +1,6 @@
 # ncurses - hello world
 
-This is a simple hello world demo with (ncurses)[https://invisible-island.net/ncurses/].
+This is a simple hello world demo with [ncurses](https://invisible-island.net/ncurses/).
 
 ## Build
 
