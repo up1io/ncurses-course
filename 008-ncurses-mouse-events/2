@@ -1,0 +1,29 @@
+#include <curses.h>
+
+int main(void) {
+  WINDOW *win;
+  int y;
+  int x;
+
+  initscr();
+  clear();
+  noecho();
+  cbreak();
+
+  win = newwin(5, 5, 0, 0);
+  box(win, 0, 0);
+
+  wrefresh(win);
+
+  getyx(win, y, x);
+
+  mvprintw(20, 2, "Windows is located at x:%d,y:%d", x, y);
+  refresh();
+
+  getch();
+
+  delwin(win);
+  endwin();
+
+  return 0;
+}
